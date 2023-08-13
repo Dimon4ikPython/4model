@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Advertisement
 
 
 def index(request):
-    return render(request, 'index.html')
+    advertsement = Advertisement.objects.all()
+    context = {'advertisement' : advertsement}
+    return render(request, 'index.html', context)
 
 
 def top_sellers(request):
