@@ -27,23 +27,3 @@
 #     print(syms_counter)
 
 # strcounter('aaabbccdee')
-
-# def palim(string):
-#     if string.lower() == string[::-1]:
-#         print("True")
-#     else:
-#         print("False")
-
-# palim("Gg")
-
-
-
-def is_palindrome(string):
-    string = string.lower().replace(" ", "")
-    string_reverse = string[::-1]
-    if string == string_reverse:
-        print("True")
-    else:
-        print("False")
-
-is_palindrome("Лепс спел")
